@@ -1,13 +1,11 @@
 from flask import Flask
-app = Flask(__name__)
-
 import time
 import lgpio
 relay_pin_1 = 24
 h = lgpio.gpiochip_open(0)
 lgpio.gpio_claim_output(h,relay_pin_1)
 
-
+app = Flask(__name__)
 
 
 @app.route('/')
