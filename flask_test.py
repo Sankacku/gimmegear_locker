@@ -13,7 +13,7 @@ def hello_world():
     return 'Hello World! <h1> Test </h1>'
 
 @app.route('/test')
-def hello_world():
+def hello_world2():
     # print("Working here")
     # lgpio.gpio_write(h,relay_pin_1, 1)
     # time.sleep(20)
