@@ -11,12 +11,12 @@ relay_pin_5 = 15
 relay_pin_6 = 18
 
 
-pin_nr1 = lgpio.gpiochip_open(0)
-pin_nr2 = lgpio.gpiochip_open(0)
-pin_nr3 = lgpio.gpiochip_open(0)
-pin_nr4 = lgpio.gpiochip_open(0)
-pin_nr5 = lgpio.gpiochip_open(0)
-pin_nr6 = lgpio.gpiochip_open(0)
+pin_nr1 = lgpio.gpiochip_open(1)
+pin_nr2 = lgpio.gpiochip_open(1)
+pin_nr3 = lgpio.gpiochip_open(1)
+pin_nr4 = lgpio.gpiochip_open(1)
+pin_nr5 = lgpio.gpiochip_open(1)
+pin_nr6 = lgpio.gpiochip_open(1)
 lgpio.gpio_claim_output(pin_nr1,relay_pin_1)
 lgpio.gpio_claim_output(pin_nr2,relay_pin_2)
 lgpio.gpio_claim_output(pin_nr3,relay_pin_3)
@@ -42,23 +42,23 @@ def hello_world2(number):
         lgpio.gpio_write(pin_nr1,relay_pin_1, 0)
         time.sleep(3)
         lgpio.gpio_write(pin_nr1,relay_pin_1, 1)
-    elif int(number) == 1:
+    elif int(number) == 2:
         lgpio.gpio_write(pin_nr2,relay_pin_2, 0)
         time.sleep(3)
         lgpio.gpio_write(pin_nr2,relay_pin_2, 1)
-    elif int(number) == 1:
+    elif int(number) == 3:
         lgpio.gpio_write(pin_nr3,relay_pin_3, 0)
         time.sleep(3)
         lgpio.gpio_write(pin_nr3,relay_pin_3, 1)
-    elif int(number) == 1:
+    elif int(number) == 4:
         lgpio.gpio_write(pin_nr4,relay_pin_4, 0)
         time.sleep(3)
         lgpio.gpio_write(pin_nr4,relay_pin_4, 1)
-    elif int(number) == 1:
+    elif int(number) == 5:
         lgpio.gpio_write(pin_nr5,relay_pin_5, 0)
         time.sleep(3)
         lgpio.gpio_write(pin_nr5,relay_pin_5, 1)
-    elif int(number) == 1:
+    elif int(number) == 6:
         lgpio.gpio_write(pin_nr6,relay_pin_6, 0)
         time.sleep(3)
         lgpio.gpio_write(pin_nr6,relay_pin_6, 1)
