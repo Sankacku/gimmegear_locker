@@ -18,7 +18,9 @@ def hello_world2(name):
 #     # time.sleep(20)
 #     # lgpio.gpiochip_close(h)
 #     # print("Still working")
-     return f'Hello {name}! <h1> Unlocking 1 </h1>'
+    print(name)
+    return f'Hello {name}! <h1> Unlocking 1 </h1>'
+     
 
 
 # if __name__ == "__main__":
