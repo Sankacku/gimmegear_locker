@@ -6,10 +6,11 @@ import lgpio
 
 def activate_for_3_sec(pin_nr):
     pin_open = lgpio.gpiochip_open(0)
-    lgpio.gpio_claim_output(pin_open,pin_nr)
+    #lgpio.gpio_claim_output(pin_open,pin_nr)
     lgpio.gpio_write(pin_open,pin_nr, 0)
     time.sleep(3)
     lgpio.gpio_write(pin_open,pin_nr, 1)
+    lgpio.gpio_free(pin_nr)
     lgpio.gpiochip_close(0)
 
 app = Flask(__name__)
