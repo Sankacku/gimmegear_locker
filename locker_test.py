@@ -22,8 +22,9 @@ try:
     #     lgpio.gpio_write(h,relay_pin_1, 0)
     #     time.sleep(x)
     #     x = x + 1
-    lgpio.gpio_write(h,relay_pin_1, 1)
+    lgpio.gpio_write(h,relay_pin_1, 0)
     time.sleep(20)
+    lgpio.gpio_write(h,relay_pin_1, 1)
     lgpio.gpiochip_close(h)
     print("Still working")
 except KeyboardInterrupt:
