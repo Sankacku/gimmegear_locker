@@ -2,7 +2,7 @@ from flask import Flask
 import time
 import lgpio
 
-lgpio.gpiochip_close(0)
+#lgpio.gpiochip_close(0)
 
 def activate_for_3_sec(pin_nr):
     pin_open = lgpio.gpiochip_open(0)
