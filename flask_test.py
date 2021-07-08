@@ -12,7 +12,7 @@ app = Flask(__name__)
 def hello_world():
     return 'Hello World! <h1> Test </h1>'
 
-@app.route('/test/')
+@app.route('/test')
 def hello_world():
     print("Working here")
     lgpio.gpio_write(h,relay_pin_1, 1)
