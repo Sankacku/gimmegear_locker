@@ -22,5 +22,5 @@ def hello_world():
 #     return 'Hello World! <h1> Unlocking 1 </h1>'
 
 
-if __name__ == "__main__":
-    app.run()
+# if __name__ == "__main__":
+#     app.run()
